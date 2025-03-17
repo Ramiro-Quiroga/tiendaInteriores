@@ -1,0 +1,31 @@
+@dominio = http://localhost:3000
+@uid = 67d4351022747804ad880830  # ID de "pedro sPérez"
+
+### Obtener todos los usuarios
+GET {{dominio}}/api/v1/users
+
+### Crear un nuevo usuario
+POST {{dominio}}/api/v1/users
+Content-Type: application/json
+
+{
+    "name": "aa asdasdQuiroga",
+    "email": "paasdp@gmail.com",
+    "password": "123456"
+}
+
+### Obtener un usuario por ID
+GET {{dominio}}/api/v1/users/{{uid}}
+
+### Actualizar un usuario por ID
+PUT {{dominio}}/api/v1/users/{{uid}}
+Content-Type: application/json
+
+{
+    "name": "Ramiro Quiroga Actualizado",
+    "email": "tomi_actualizado@gmail.com",
+    "password": "nuevacontraseña"
+}
+
+### Eliminar un usuario por ID
+DELETE {{dominio}}/api/v1/users/{{uid}}

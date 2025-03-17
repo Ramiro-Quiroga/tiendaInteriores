@@ -1,0 +1,49 @@
+@dominio = http://localhost:3000
+
+### Crear silla
+POST {{dominio}}/api/v1/productos
+Content-Type: application/json
+
+{
+    "name": "Silla Moderna",
+    "description": "Silla ergonómica con diseño moderno",
+    "price": 299.99,
+    "categoria": "sillas",
+    "imagen": "https://ejemplo.com/silla1.jpg",
+    "stock": 10
+}
+
+### Crear mesa
+POST {{dominio}}/api/v1/productos
+Content-Type: application/json
+
+{
+    "name": "Mesa de Centro",
+    "description": "Mesa de centro con acabado en madera",
+    "price": 499.99,
+    "categoria": "mesas",
+    "imagen": "https://ejemplo.com/mesa1.jpg",
+    "stock": 5
+}
+
+### Crear sofá
+POST {{dominio}}/api/v1/productos
+Content-Type: application/json
+
+{
+    "name": "Sofá 3 Plazas",
+    "description": "Sofá moderno de 3 plazas con tela premium",
+    "price": 999.99,
+    "categoria": "sofas",
+    "imagen": "https://ejemplo.com/sofa1.jpg",
+    "stock": 3
+}
+
+### Obtener productos por categoría (sillas)
+GET {{dominio}}/api/v1/productos/categoria/sillas
+
+### Obtener productos por categoría (mesas)
+GET {{dominio}}/api/v1/productos/categoria/mesas
+
+### Obtener productos por categoría (sofas)
+GET {{dominio}}/api/v1/productos/categoria/sofas 

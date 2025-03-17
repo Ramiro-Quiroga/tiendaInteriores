@@ -1,0 +1,137 @@
+/* Estilos generales para la barra de navegación */
+.navegacion {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    
+    
+  }
+  
+  /* Estilos para la lista de navegación */
+  .lista-navegacion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para cada ítem de la lista */
+  .item-navegacion {
+    margin-right: 2rem;
+  }
+  
+  /* Estilos para los enlaces */
+  .enlace-navegacion {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Efecto hover para los enlaces */
+  .enlace-navegacion:hover {
+    color: #ff6f61; /* Color vibrante al hacer hover */
+    transform: translateY(-2px); /* Efecto de levitación */
+  }
+  
+  /* Efecto activo para los enlaces */
+  .enlace-navegacion:active {
+    color: #ff3b2f; /* Color más intenso al hacer clic */
+    transform: translateY(0);
+  }
+  
+  /* Diseño Respons
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.navbar-links {
+    display: none;
+    margin-left: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .navbar-links {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navbar-link {
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    padding: 0.25rem 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.navbar-link:hover {
+    color: #374151;
+    border-color: #d1d5db;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-button {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    color: #6b7280;
+    transition: color 0.2s;
+}
+
+.user-button:hover {
+    color: #374151;
+}
+
+.user-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
